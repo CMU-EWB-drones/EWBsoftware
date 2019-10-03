@@ -4,6 +4,7 @@
 
 #Comment, 10/3
 
+#anything
 # import the necessary packages
 from pyimagesearch.panorama import Stitcher
 import argparse
