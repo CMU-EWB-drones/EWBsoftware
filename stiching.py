@@ -2,6 +2,8 @@
 # USAGE
 # python stitch.py --first images/bryce_left_01.png --second images/bryce_right_01.png 
 
+#Comment, 10/3
+
 # import the necessary packages
 from pyimagesearch.panorama import Stitcher
 import argparse
