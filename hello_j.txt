@@ -1,2 +1,0 @@
-testing
-hello world
