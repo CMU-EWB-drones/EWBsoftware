@@ -47,16 +47,16 @@ def main():
     size = 0
     while size == 0:
         try:
-            size = int(input("size of square: ").strip())
+            size = float(input("size of square: ").strip())
         except ValueError:
             print("REEEE that was not an int, why don't u try again honey.")
     overlap = 0
     while overlap == 0:
         try:
-            overlap = int(input("overlap value: ").strip())
+            overlap = float(input("overlap value: ").strip())
         except ValueError:
             print("REEEE that was not an int, why don't u try again honey.")
-    points = re.findall(r'\(\d+,\d+\)', spoints)
+    points = re.findall(r'\(-*\d+\.*\d*,\s*-*\d+\.*\d*\)', spoints)
     # print("---", points)
     for i in range(len(points)):
         points[i] = eval(points[i].strip())
@@ -67,4 +67,4 @@ def main():
 
 main()
 
-# (0,0) (0,10) (10,10) (10,0)
+# (0.0003,-3.224) (2.334,5.667) (11.433,10.772) (9.773,0.101)
